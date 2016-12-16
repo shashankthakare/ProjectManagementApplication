@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PMD" Class="StoredProcedureDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=Training7;Initial Catalog=PMD;Integrated Security=True" SettingsObjectName="TeamExpeditors.PMD.Database.Properties.Settings" SettingsPropertyName="PMDConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.ShowOneItemAndTeams" Method="ShowOneItemAndTeams">
+    <Parameter Name="DashboardID" Parameter="dashboardID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="ShowOneItemAndTeamsResult">
+      <Column Name="ItemName" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="TeamName" Type="System.String" DbType="NVarChar(32) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ShowAllUsersInCompany" Method="ShowAllUsersInCompany">
+    <Parameter Name="CompanyID" Parameter="companyID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="ShowAllUsersInCompanyResult">
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(16) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ShowAllTeamsInCompany" Method="ShowAllTeamsInCompany">
+    <Parameter Name="companyID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="ShowAllTeamsInCompanyResult">
+      <Column Name="TeamID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TeamName" Type="System.String" DbType="NVarChar(32) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ShowAllItemsAndTeams" Method="ShowAllItemsAndTeams">
+    <Parameter Name="DashboardID" Parameter="dashboardID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="ShowAllItemsAndTeamsResult">
+      <Column Name="ItemID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ItemName" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="TeamID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TeamName" Type="System.String" DbType="NVarChar(32) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ShowAllAccessRights" Method="ShowAllAccessRights">
+    <Parameter Name="DashboardID" Parameter="dashboardID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="ShowAllAccessRightsResult">
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(16) NOT NULL" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AccessRight" Type="System.String" DbType="NVarChar(16) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.RetreiveTeamsWorkingOnItem" Method="RetreiveTeamsWorkingOnItem">
+    <Parameter Name="dashboardItemID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="RetreiveTeamsWorkingOnItemResult">
+      <Column Name="TeamID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TeamName" Type="System.String" DbType="NVarChar(32) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.RetreiveTeamsWorkingOnDashboard" Method="RetreiveTeamsWorkingOnDashboard">
+    <Parameter Name="dashboardID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="RetreiveTeamsWorkingOnDashboardResult">
+      <Column Name="ItemID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TeamID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.RetreiveTeams" Method="RetreiveTeams">
+    <Parameter Name="companyID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="RetreiveTeamsResult">
+      <Column Name="TeamID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TeamName" Type="System.String" DbType="NVarChar(32) NOT NULL" CanBeNull="false" />
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.RetreiveExistingDashboards" Method="RetreiveExistingDashboards">
+    <Parameter Name="UserID" Parameter="userID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="RetreiveExistingDashboardsResult">
+      <Column Name="DashboardID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DashboardName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EndMonth" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EndYear" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StartMonth" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StartYear" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AccessRight" Type="System.String" DbType="NVarChar(16) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.RetreiveExistingDashboardItemsByTeamID" Method="RetreiveExistingDashboardItemsByTeamID">
+    <Parameter Name="DashboardID" Parameter="dashboardID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="teamID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="RetreiveExistingDashboardItemsByTeamIDResult">
+      <Column Name="DashboardID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="ItemID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ItemName" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.RetreiveCompanies" Method="RetreiveCompanies">
+    <ElementType Name="RetreiveCompaniesResult">
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.LoginAuthentication" Method="LoginAuthentication">
+    <Parameter Name="userEmail" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="encryptedPassword" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="LoginAuthenticationResult">
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(16) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsOwner" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.InsertUserDetails" Method="InsertUserDetails">
+    <Parameter Name="CompanyID" Parameter="companyID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="FirstName" Parameter="firstName" Type="System.String" DbType="NVarChar(16)" />
+    <Parameter Name="Lastname" Parameter="lastname" Type="System.String" DbType="NVarChar(16)" />
+    <Parameter Name="userEmail" Type="System.String" DbType="NVarChar(128)" />
+    <Parameter Name="IsOwner" Parameter="isOwner" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="EncryptedPassword" Parameter="encryptedPassword" Type="System.String" DbType="NVarChar(128)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.InsertTestData" Method="InsertTestData" IsComposable="true">
+    <Parameter Name="Test1" Parameter="test1" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Test2" Parameter="test2" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="object" />
+  </Function>
+  <Function Name="dbo.InsertDashboardUser" Method="InsertDashboardUser">
+    <Parameter Name="AccessRight" Parameter="accessRight" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="UserID" Parameter="userID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DashboardID" Parameter="dashboardID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="InsertDashboardUserResult">
+      <Column Name="DashboardID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetDashboardData" Method="GetDashboardData">
+    <Parameter Name="DashboardName" Parameter="dashboardName" Type="System.String" DbType="VarChar(40)" />
+    <Parameter Name="StartMonth" Parameter="startMonth" Type="System.Int32" DbType="Int" />
+    <Parameter Name="StartYear" Parameter="startYear" Type="System.Int32" DbType="Int" />
+    <Parameter Name="EndMonth" Parameter="endMonth" Type="System.Int32" DbType="Int" />
+    <Parameter Name="EndYear" Parameter="endYear" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.EditDataItemName" Method="EditDataItemName">
+    <Parameter Name="ItemName" Parameter="itemName" Type="System.String" DbType="NVarChar(32)" />
+    <Parameter Name="DashboardID" Parameter="dashboardID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ItemID" Parameter="itemID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.EditDataItemLength" Method="EditDataItemLength">
+    <Parameter Name="StartDate" Parameter="startDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="EndDate" Parameter="endDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="DashboardID" Parameter="dashboardID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ItemID" Parameter="itemID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.DeleteUsersFromDashboard" Method="DeleteUsersFromDashboard">
+    <Parameter Name="DashboardID" Parameter="dashboardID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.DeleteTeamsFromDashboardItem" Method="DeleteTeamsFromDashboardItem">
+    <Parameter Name="ItemID" Parameter="itemID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.DeleteTeams" Method="DeleteTeams">
+    <Parameter Name="companyID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.DeleteTeam" Method="DeleteTeam">
+    <Parameter Name="teamID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.DeleteDataItem" Method="DeleteDataItem">
+    <Parameter Name="ItemName" Parameter="itemName" Type="System.String" DbType="VarChar(40)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CompanyRegisteration" Method="CompanyRegisteration">
+    <Parameter Name="companyAccount" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="companyName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="companyURL" Type="System.String" DbType="Text" />
+    <ElementType Name="CompanyRegisterationResult">
+      <Column Name="" Member="Column1" Type="System.Decimal" DbType="Decimal(38,0)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CheckAccessRights" Method="CheckAccessRights">
+    <Parameter Name="DashboardID" Parameter="dashboardID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="CheckAccessRightsResult">
+      <Column Name="AccessRight" Type="System.String" DbType="NVarChar(16) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ChangeAccessRights" Method="ChangeAccessRights">
+    <Parameter Name="AccessRight" Parameter="accessRight" Type="System.String" DbType="NVarChar(16)" />
+    <Parameter Name="DashboardID" Parameter="dashboardID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="UserID" Parameter="userID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.AddUserToDashboard" Method="AddUserToDashboard">
+    <Parameter Name="AccessRight" Parameter="accessRight" Type="System.String" DbType="NVarChar(16)" />
+    <Parameter Name="DashboardID" Parameter="dashboardID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.AddTeamToDashboardItem" Method="AddTeamToDashboardItem">
+    <Parameter Name="ItemID" Parameter="itemID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="TeamID" Parameter="teamID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.AddTeams" Method="AddTeams">
+    <Parameter Name="TeamName" Parameter="teamName" Type="System.String" DbType="NVarChar(32)" />
+    <Parameter Name="companyID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ShowAllItemsAndTeamsOuterJoin" Method="ShowAllItemsAndTeamsOuterJoin">
+    <Parameter Name="DashboardID" Parameter="dashboardID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="ShowAllItemsAndTeamsOuterJoinResult">
+      <Column Name="ItemID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ItemName" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="TeamID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TeamName" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.RetreiveSource" Method="RetreiveSource">
+    <Parameter Name="dashboardID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="RetreiveSourceResult">
+      <Column Name="SourceID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Source" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="DashboardID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.RetreiveStatus" Method="RetreiveStatus">
+    <Parameter Name="dashboardID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="RetreiveStatusResult">
+      <Column Name="StatusID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Color" Type="System.String" DbType="NVarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="DashboardID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.AddDataItem" Method="AddDataItem">
+    <Parameter Name="ItemName" Parameter="itemName" Type="System.String" DbType="NVarChar(16)" />
+    <Parameter Name="StartDate" Parameter="startDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="EndDate" Parameter="endDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="DashboardID" Parameter="dashboardID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="StatusID" Parameter="statusID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="AddDataItemResult">
+      <Column Name="" Member="Column1" Type="System.Decimal" DbType="Decimal(38,0)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.AddDataItemSource" Method="AddDataItemSource">
+    <Parameter Name="ItemID" Parameter="itemID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SourceID" Parameter="sourceID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.RetreiveDashboardItem" Method="RetreiveDashboardItem">
+    <Parameter Name="itemID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="RetreiveDashboardItemResult">
+      <Column Name="ItemID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ItemName" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DashboardID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StatusID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetSourcesByItemID" Method="GetSourcesByItemID">
+    <Parameter Name="itemID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="GetSourcesByItemIDResult">
+      <Column Name="SourceID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Source" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetDashboardByID" Method="GetDashboardByID">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <ElementType Name="GetDashboardByIDResult">
+      <Column Name="DashboardName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="StartMonth" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StartYear" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EndMonth" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EndYear" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.RetreiveExistingDashboardItems" Method="RetreiveExistingDashboardItems">
+    <Parameter Name="DashboardID" Parameter="dashboardID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="sortBy" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="RetreiveExistingDashboardItemsResult">
+      <Column Name="ItemID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ItemName" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DashboardID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StatusID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.AddDashboardSources" Method="AddDashboardSources">
+    <Parameter Name="Source" Parameter="source" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="DashboardID" Parameter="dashboardID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.AddDashboardStatus" Method="AddDashboardStatus">
+    <Parameter Name="status" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="color" Type="System.String" DbType="NVarChar(6)" />
+    <Parameter Name="dashboardID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CreateDashboard" Method="CreateDashboard">
+    <Parameter Name="DashboardName" Parameter="dashboardName" Type="System.String" DbType="VarChar(40)" />
+    <Parameter Name="StartMonth" Parameter="startMonth" Type="System.Int32" DbType="Int" />
+    <Parameter Name="StartYear" Parameter="startYear" Type="System.Int32" DbType="Int" />
+    <Parameter Name="EndMonth" Parameter="endMonth" Type="System.Int32" DbType="Int" />
+    <Parameter Name="EndYear" Parameter="endYear" Type="System.Int32" DbType="Int" />
+    <Parameter Name="UserID" Parameter="userID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="AccessRight" Parameter="accessRight" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="Description" Parameter="description" Type="System.String" DbType="Text" />
+    <ElementType Name="CreateDashboardResult">
+      <Column Name="" Member="Column1" Type="System.Decimal" DbType="Decimal(38,0)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.DeleteDashboardStatus" Method="DeleteDashboardStatus">
+    <Parameter Name="sID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.DeleteDashboardSource" Method="DeleteDashboardSource">
+    <Parameter Name="sID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.DeleteDashboardItem" Method="DeleteDashboardItem">
+    <Parameter Name="itemID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.DeleteDashboard" Method="DeleteDashboard">
+    <Parameter Name="DashboardID" Parameter="dashboardID" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.RetreiveExistingDashboardItemsSortedAndFiltered" Method="RetreiveExistingDashboardItemsSortedAndFiltered">
+    <Parameter Name="DashboardID" Parameter="dashboardID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="sortBy" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="teamID" Type="System.String" DbType="VarChar(15)" />
+    <ElementType Name="RetreiveExistingDashboardItemsSortedAndFilteredResult">
+      <Column Name="DashboardID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="ItemID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ItemName" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.RetreiveExistingDashboardItemsSortedAndFilteredDistinct" Method="RetreiveExistingDashboardItemsSortedAndFilteredDistinct">
+    <Parameter Name="DashboardID" Parameter="dashboardID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="sortBy" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="teamID" Type="System.String" DbType="VarChar(15)" />
+    <ElementType Name="RetreiveExistingDashboardItemsSortedAndFilteredDistinctResult">
+      <Column Name="DashboardID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="ItemID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ItemName" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.LoginAuthenticationWithCompanyDetails" Method="LoginAuthenticationWithCompanyDetails">
+    <Parameter Name="userEmail" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="encryptedPassword" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="LoginAuthenticationWithCompanyDetailsResult">
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(16) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="CompanyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsOwner" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Account" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Url" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.RetreiveExistingDashboardItemsSortedAndFilteredDistinctColor" Method="RetreiveExistingDashboardItemsSortedAndFilteredDistinctColor">
+    <Parameter Name="DashboardID" Parameter="dashboardID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="sortBy" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="teamID" Type="System.String" DbType="VarChar(15)" />
+    <ElementType Name="RetreiveExistingDashboardItemsSortedAndFilteredDistinctColorResult">
+      <Column Name="DashboardID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="ItemID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ItemName" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="StatusID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Color" Type="System.String" DbType="NVarChar(6) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.EditDashboard" Method="EditDashboard">
+    <Parameter Name="DashboardID" Parameter="dashboardID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DashboardName" Parameter="dashboardName" Type="System.String" DbType="VarChar(40)" />
+    <Parameter Name="StartMonth" Parameter="startMonth" Type="System.Int32" DbType="Int" />
+    <Parameter Name="StartYear" Parameter="startYear" Type="System.Int32" DbType="Int" />
+    <Parameter Name="EndMonth" Parameter="endMonth" Type="System.Int32" DbType="Int" />
+    <Parameter Name="EndYear" Parameter="endYear" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Description" Parameter="description" Type="System.String" DbType="Text" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ChangePassword" Method="ChangePassword">
+    <Parameter Name="userID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="newPassword" Type="System.String" DbType="NVarChar(40)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.AuthenticationByID" Method="AuthenticationByID">
+    <Parameter Name="userID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="encryptedPassword" Type="System.String" DbType="NVarChar(50)" />
+    <ElementType Name="AuthenticationByIDResult">
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(16) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

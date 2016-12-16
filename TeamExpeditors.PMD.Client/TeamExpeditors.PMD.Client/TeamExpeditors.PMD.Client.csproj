@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{04447B0C-A1E1-4461-8ACA-B07678727AA6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TeamExpeditors.PMD.Client</RootNamespace>
+    <AssemblyName>TeamExpeditors.PMD.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="ColorCodes\css\screen.css" />
+    <Content Include="ColorCodes\demo.htm" />
+    <Content Include="ColorCodes\img\bullet.gif" />
+    <Content Include="ColorCodes\img\greybg.png" />
+    <Content Include="ColorCodes\img\header.gif" />
+    <Content Include="ColorCodes\img\hline.png" />
+    <Content Include="ColorCodes\img\hue.png" />
+    <Content Include="ColorCodes\img\navHover2.png" />
+    <Content Include="ColorCodes\img\pickerbg.png" />
+    <Content Include="ColorCodes\img\qbottom.png" />
+    <Content Include="ColorCodes\img\qmiddle.png" />
+    <Content Include="ColorCodes\img\qtop.png" />
+    <Content Include="ColorCodes\img\select.gif" />
+    <Content Include="ColorCodes\img\select.png" />
+    <Content Include="ColorCodes\img\vline.png" />
+    <Content Include="ColorCodes\js\animation.js" />
+    <Content Include="ColorCodes\js\color.js" />
+    <Content Include="ColorCodes\js\ddcolorposter.js" />
+    <Content Include="ColorCodes\js\dom.js" />
+    <Content Include="ColorCodes\js\dragdrop.js" />
+    <Content Include="ColorCodes\js\event.js" />
+    <Content Include="ColorCodes\js\key.js" />
+    <Content Include="ColorCodes\js\log.js" />
+    <Content Include="ColorCodes\js\slider.js" />
+    <Content Include="ColorCodes\js\YAHOO.js" />
+    <Content Include="CompanyRegistration.aspx" />
+    <Content Include="CreateItem.aspx" />
+    <Content Include="CreateNewDashboard.aspx" />
+    <Content Include="CreateNewDashboardByExistingDashboard.aspx" />
+    <Content Include="DashboardDescription.aspx" />
+    <Content Include="DashboardDetails.aspx" />
+    <Content Include="DashboardItems.aspx" />
+    <Content Include="DashboardItemTeams.aspx" />
+    <Content Include="EditDashboard.aspx" />
+    <Content Include="EditDashboardUser.aspx" />
+    <Content Include="fancybox\blank.gif" />
+    <Content Include="fancybox\fancybox_loading.gif" />
+    <Content Include="fancybox\fancybox_sprite.png" />
+    <Content Include="fancybox\helpers\fancybox_buttons.png" />
+    <Content Include="fancybox\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="fancybox\helpers\jquery.fancybox-buttons.js" />
+    <Content Include="fancybox\helpers\jquery.fancybox-media.js" />
+    <Content Include="fancybox\helpers\jquery.fancybox-thumbs.css" />
+    <Content Include="fancybox\helpers\jquery.fancybox-thumbs.js" />
+    <Content Include="fancybox\jquery.fancybox.css" />
+    <Content Include="fancybox\jquery.fancybox.js" />
+    <Content Include="fancybox\jquery.fancybox.pack.js" />
+    <Content Include="ForgotPassword.aspx" />
+    <Content Include="Images\Admin.gif" />
+    <Content Include="Images\Background.png" />
+    <Content Include="Images\home.png" />
+    <Content Include="Images\iThingTheme.png" />
+    <Content Include="Images\Read.png" />
+    <Content Include="Images\Write.png" />
+    <Content Include="jQRangeSlider-5.3.0\css\classic-min.css" />
+    <Content Include="jQRangeSlider-5.3.0\css\classic.css" />
+    <Content Include="jQRangeSlider-5.3.0\css\DashBoardCSS.css" />
+    <Content Include="jQRangeSlider-5.3.0\css\DashboardGrid.css" />
+    <Content Include="jQRangeSlider-5.3.0\css\EditdashboardUser.css" />
+    <Content Include="jQRangeSlider-5.3.0\css\icons-classic\label.png" />
+    <Content Include="jQRangeSlider-5.3.0\css\icons-classic\resultset_next.png" />
+    <Content Include="jQRangeSlider-5.3.0\css\icons-classic\resultset_previous.png" />
+    <Content Include="jQRangeSlider-5.3.0\css\iThing-min.css" />
+    <Content Include="jQRangeSlider-5.3.0\css\iThing.css" />
+    <Content Include="jQRangeSlider-5.3.0\css\styleDashboardPopUp.css" />
+    <Content Include="jQRangeSlider-5.3.0\css\Styles.css" />
+    <Content Include="jQRangeSlider-5.3.0\css\UserList.css" />
+    <Content Include="jQRangeSlider-5.3.0\demo\DateRange.htm" />
+    <Content Include="jQRangeSlider-5.3.0\demo\img\calendar.png" />
+    <Content Include="jQRangeSlider-5.3.0\demo\img\classicTheme.png" />
+    <Content Include="jQRangeSlider-5.3.0\demo\img\iThingTheme.png" />
+    <Content Include="jQRangeSlider-5.3.0\demo\index.html" />
+    <Content Include="jQRangeSlider-5.3.0\demo\lib\jquery-ui\css\smoothness\DashBoardCSS.css" />
+    <Content Include="jQRangeSlider-5.3.0\demo\lib\jquery-ui\css\smoothness\DashboardGrid.css" />
+    <Content Include="jQRangeSlider-5.3.0\demo\lib\jquery-ui\css\smoothness\EditdashboardUser.css" />
+    <Content Include="jQRangeSlider-5.3.0\demo\lib\jquery-ui\css\smoothness\jquery-ui-1.8.10.custom.css" />
+    <Content Include="jQRangeSlider-5.3.0\demo\lib\jquery-ui\css\smoothness\styleDashboardPopUp.css" />
+    <Content Include="jQRangeSlider-5.3.0\demo\lib\jquery-ui\css\smoothness\Styles.css" />
+    <Content Include="jQRangeSlider-5.3.0\demo\lib\jquery-ui\css\smoothness\UserList.css" />
+    <Content Include="jQRangeSlider-5.3.0\demo\lib\jquery-ui\js\custom.js" />
+    <Content Include="jQRangeSlider-5.3.0\demo\lib\jquery-ui\js\DashboardHome.js" />
+    <Content Include="jQRangeSlider-5.3.0\demo\lib\jquery-ui\js\DashBoardItem.js" />
+    <Content Include="jQRangeSlider-5.3.0\demo\lib\jquery-ui\js\DashboardItemTeam.js" />
+    <Content Include="jQRangeSlider-5.3.0\demo\lib\jquery-ui\js\EditDashboardUser.js" />
+    <Content Include="jQRangeSlider-5.3.0\demo\lib\jquery-ui\js\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="jQRangeSlider-5.3.0\demo\lib\jquery-ui\js\jquery.tokeninput.js" />
+    <Content Include="jQRangeSlider-5.3.0\demo\lib\jquery-ui\js\SliderScripts\jQAllRangeSliders-min.js" />
+    <Content Include="jQRangeSlider-5.3.0\demo\lib\jquery-ui\js\SliderScripts\jQAllRangeSliders-withRuler-min.js" />
+    <Content Include="jQRangeSlider-5.3.0\demo\lib\jquery-ui\js\Slider\jQAllRangeSliders-min.js" />
+    <Content Include="jQRangeSlider-5.3.0\demo\lib\jquery-ui\js\Slider\jQAllRangeSliders-withRuler-min.js" />
+    <Content Include="jQRangeSlider-5.3.0\demo\lib\jquery-ui\js\UserList.js" />
+    <Content Include="jQRangeSlider-5.3.0\demo\style.css" />
+    <Content Include="jQRangeSlider-5.3.0\jQAllRangeSliders-min.js" />
+    <Content Include="jQRangeSlider-5.3.0\jQAllRangeSliders-withRuler-min.js" />
+    <Content Include="jQRangeSlider-5.3.0\lib\custom.js" />
+    <Content Include="jQRangeSlider-5.3.0\lib\DashboardHome.js" />
+    <Content Include="jQRangeSlider-5.3.0\lib\DashBoardItem.js" />
+    <Content Include="jQRangeSlider-5.3.0\lib\DashboardItemTeam.js" />
+    <Content Include="jQRangeSlider-5.3.0\lib\EditDashboardUser.js" />
+    <Content Include="jQRangeSlider-5.3.0\lib\jquery-1.7.1.min.js" />
+    <Content Include="jQRangeSlider-5.3.0\lib\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="jQRangeSlider-5.3.0\lib\jquery-ui.license.txt" />
+    <Content Include="jQRangeSlider-5.3.0\lib\jquery.license.txt" />
+    <Content Include="jQRangeSlider-5.3.0\lib\jquery.mousewheel.license.txt" />
+    <Content Include="jQRangeSlider-5.3.0\lib\jquery.mousewheel.min.js" />
+    <Content Include="jQRangeSlider-5.3.0\lib\jquery.tokeninput.js" />
+    <Content Include="jQRangeSlider-5.3.0\lib\SliderScripts\jQAllRangeSliders-min.js" />
+    <Content Include="jQRangeSlider-5.3.0\lib\SliderScripts\jQAllRangeSliders-withRuler-min.js" />
+    <Content Include="jQRangeSlider-5.3.0\lib\Slider\jQAllRangeSliders-min.js" />
+    <Content Include="jQRangeSlider-5.3.0\lib\Slider\jQAllRangeSliders-withRuler-min.js" />
+    <Content Include="jQRangeSlider-5.3.0\lib\UserList.js" />
+    <Content Include="Registration.aspx" />
+    <Content Include="Scripts\EditDashboard.js" />
+    <Content Include="Scripts\CreateItem.js" />
+    <Content Include="Scripts\custom.js" />
+    <Content Include="Scripts\DashBoardItem.js" />
+    <Content Include="Scripts\DashboardItemTeams.js" />
+    <Content Include="Scripts\EditDashboardUser.js" />
+    <Content Include="Scripts\jQAllRangeSliders-min.js" />
+    <Content Include="Scripts\jquery.tokeninput.js" />
+    <Content Include="Scripts\jquery.tokeninputteam.js" />
+    <Content Include="Scripts\Teams.js" />
+    <Content Include="Styles\ChangePassword.css" />
+    <Content Include="Styles\CreateNewDashboard.css" />
+    <Content Include="Styles\DashBoardCSS.css" />
+    <Content Include="DashboardHome.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Scripts\DashboardHome.js" />
+    <Content Include="Styles\DashboardGrid.css" />
+    <Content Include="Styles\DashboardItemTeams.css" />
+    <Content Include="Styles\EditdashboardUser.css" />
+    <Content Include="Styles\LoginPage.css" />
+    <Content Include="Styles\Slider.css" />
+    <Content Include="Styles\styleDashboardPopUp.css" />
+    <Content Include="Styles\Styles.css" />
+    <Content Include="Teams.aspx" />
+    <Content Include="UserList.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyRegistration.aspx.cs">
+      <DependentUpon>CompanyRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyRegistration.aspx.designer.cs">
+      <DependentUpon>CompanyRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateItem.aspx.cs">
+      <DependentUpon>CreateItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateItem.aspx.designer.cs">
+      <DependentUpon>CreateItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateNewDashboard.aspx.cs">
+      <DependentUpon>CreateNewDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateNewDashboard.aspx.designer.cs">
+      <DependentUpon>CreateNewDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateNewDashboardByExistingDashboard.aspx.cs">
+      <DependentUpon>CreateNewDashboardByExistingDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateNewDashboardByExistingDashboard.aspx.designer.cs">
+      <DependentUpon>CreateNewDashboardByExistingDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardDescription.aspx.cs">
+      <DependentUpon>DashboardDescription.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashboardDescription.aspx.designer.cs">
+      <DependentUpon>DashboardDescription.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardDetails.aspx.cs">
+      <DependentUpon>DashboardDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashboardDetails.aspx.designer.cs">
+      <DependentUpon>DashboardDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardHome.aspx.cs">
+      <DependentUpon>DashboardHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashboardHome.aspx.designer.cs">
+      <DependentUpon>DashboardHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardItems.aspx.cs">
+      <DependentUpon>DashboardItems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashboardItems.aspx.designer.cs">
+      <DependentUpon>DashboardItems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardItemTeams.aspx.cs">
+      <DependentUpon>DashboardItemTeams.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashboardItemTeams.aspx.designer.cs">
+      <DependentUpon>DashboardItemTeams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditDashboard.aspx.cs">
+      <DependentUpon>EditDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditDashboard.aspx.designer.cs">
+      <DependentUpon>EditDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditDashboardUser.aspx.cs">
+      <DependentUpon>EditDashboardUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditDashboardUser.aspx.designer.cs">
+      <DependentUpon>EditDashboardUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginMaster.Master.cs">
+      <DependentUpon>LoginMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginMaster.Master.designer.cs">
+      <DependentUpon>LoginMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeamExpeditors.PMD.ClientProxy.cs" />
+    <Compile Include="Teams.aspx.cs">
+      <DependentUpon>Teams.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teams.aspx.designer.cs">
+      <DependentUpon>Teams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Main.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LoginMaster.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ColorCodes\img\Thumbs.db" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>1888</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1888/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,30 @@
+﻿body
+{
+}
+.DashBoardHeader
+{
+	/*background-color: Blue;*/
+}
+
+.LabelFont
+{
+	font-size: x-large;
+}
+.DashboardContainer
+{
+	height: 100%;
+	width:100%;
+	
+	padding:10px;
+}
+
+.SingleDashBoard
+{
+	height: 40px;
+	width: 40px;
+	background-color:White;
+}
+.SpaceDiv
+{
+    height:10pt;
+    }

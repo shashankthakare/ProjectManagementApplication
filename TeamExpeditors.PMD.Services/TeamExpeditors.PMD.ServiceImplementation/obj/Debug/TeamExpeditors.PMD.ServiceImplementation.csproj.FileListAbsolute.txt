@@ -1,0 +1,11 @@
+C:\Users\ADMIN\Downloads\PMD\TeamExpeditors.PMD.Services\TeamExpeditors.PMD.ServiceImplementation\bin\Debug\TeamExpeditors.PMD.ServiceImplementation.dll
+C:\Users\ADMIN\Downloads\PMD\TeamExpeditors.PMD.Services\TeamExpeditors.PMD.ServiceImplementation\bin\Debug\TeamExpeditors.PMD.ServiceImplementation.pdb
+C:\Users\ADMIN\Downloads\PMD\TeamExpeditors.PMD.Services\TeamExpeditors.PMD.ServiceImplementation\bin\Debug\TeamExpeditors.PMD.Database.dll
+C:\Users\ADMIN\Downloads\PMD\TeamExpeditors.PMD.Services\TeamExpeditors.PMD.ServiceImplementation\bin\Debug\TeamExpeditors.PMD.DataContracts.dll
+C:\Users\ADMIN\Downloads\PMD\TeamExpeditors.PMD.Services\TeamExpeditors.PMD.ServiceImplementation\bin\Debug\TeamExpeditors.PMD.ServiceContracts.dll
+C:\Users\ADMIN\Downloads\PMD\TeamExpeditors.PMD.Services\TeamExpeditors.PMD.ServiceImplementation\bin\Debug\TeamExpeditors.PMD.Database.pdb
+C:\Users\ADMIN\Downloads\PMD\TeamExpeditors.PMD.Services\TeamExpeditors.PMD.ServiceImplementation\bin\Debug\TeamExpeditors.PMD.DataContracts.pdb
+C:\Users\ADMIN\Downloads\PMD\TeamExpeditors.PMD.Services\TeamExpeditors.PMD.ServiceImplementation\bin\Debug\TeamExpeditors.PMD.ServiceContracts.pdb
+C:\Users\ADMIN\Downloads\PMD\TeamExpeditors.PMD.Services\TeamExpeditors.PMD.ServiceImplementation\obj\Debug\TeamExpeditors.PMD.ServiceImplementation.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Downloads\PMD\TeamExpeditors.PMD.Services\TeamExpeditors.PMD.ServiceImplementation\obj\Debug\TeamExpeditors.PMD.ServiceImplementation.dll
+C:\Users\ADMIN\Downloads\PMD\TeamExpeditors.PMD.Services\TeamExpeditors.PMD.ServiceImplementation\obj\Debug\TeamExpeditors.PMD.ServiceImplementation.pdb

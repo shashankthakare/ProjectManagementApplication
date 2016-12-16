@@ -1,0 +1,5 @@
+C:\Users\ADMIN\Downloads\PMD\TeamExpeditors.PMD.Services\TeamExpeditors.PMD.DataContracts\bin\Debug\TeamExpeditors.PMD.DataContracts.dll
+C:\Users\ADMIN\Downloads\PMD\TeamExpeditors.PMD.Services\TeamExpeditors.PMD.DataContracts\bin\Debug\TeamExpeditors.PMD.DataContracts.pdb
+C:\Users\ADMIN\Downloads\PMD\TeamExpeditors.PMD.Services\TeamExpeditors.PMD.DataContracts\obj\Debug\TeamExpeditorsPMD.DataContracts.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Downloads\PMD\TeamExpeditors.PMD.Services\TeamExpeditors.PMD.DataContracts\obj\Debug\TeamExpeditors.PMD.DataContracts.dll
+C:\Users\ADMIN\Downloads\PMD\TeamExpeditors.PMD.Services\TeamExpeditors.PMD.DataContracts\obj\Debug\TeamExpeditors.PMD.DataContracts.pdb

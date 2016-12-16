@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamExpeditorsPMD.DataContracts", "TeamExpeditors.PMD.DataContracts\TeamExpeditorsPMD.DataContracts.csproj", "{6E827E3D-2121-4003-A4EA-0DD6C249B87B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamExpeditors.PMD.ServiceContracts", "TeamExpeditors.PMD.ServiceContracts\TeamExpeditors.PMD.ServiceContracts.csproj", "{B6A33FB0-5F62-41B5-835E-01269ECAE807}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamExpeditors.PMD.ServiceImplementation", "TeamExpeditors.PMD.ServiceImplementation\TeamExpeditors.PMD.ServiceImplementation.csproj", "{9FFBCFE7-AD22-461F-94EC-56370F20A971}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamExpeditors.PMD.Database", "TeamExpeditors.PMD.Database\TeamExpeditors.PMD.Database.csproj", "{3310DD91-9F05-49B9-B35D-C11307F52970}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamExpeditors.PMD.Service", "TeamExpeditors.PMD.Service\TeamExpeditors.PMD.Service.csproj", "{264EF7AD-81DF-44C1-9B09-B47FB4035CEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E827E3D-2121-4003-A4EA-0DD6C249B87B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E827E3D-2121-4003-A4EA-0DD6C249B87B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E827E3D-2121-4003-A4EA-0DD6C249B87B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E827E3D-2121-4003-A4EA-0DD6C249B87B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6A33FB0-5F62-41B5-835E-01269ECAE807}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6A33FB0-5F62-41B5-835E-01269ECAE807}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6A33FB0-5F62-41B5-835E-01269ECAE807}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6A33FB0-5F62-41B5-835E-01269ECAE807}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FFBCFE7-AD22-461F-94EC-56370F20A971}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FFBCFE7-AD22-461F-94EC-56370F20A971}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FFBCFE7-AD22-461F-94EC-56370F20A971}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FFBCFE7-AD22-461F-94EC-56370F20A971}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3310DD91-9F05-49B9-B35D-C11307F52970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3310DD91-9F05-49B9-B35D-C11307F52970}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3310DD91-9F05-49B9-B35D-C11307F52970}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3310DD91-9F05-49B9-B35D-C11307F52970}.Release|Any CPU.Build.0 = Release|Any CPU
+		{264EF7AD-81DF-44C1-9B09-B47FB4035CEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{264EF7AD-81DF-44C1-9B09-B47FB4035CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{264EF7AD-81DF-44C1-9B09-B47FB4035CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{264EF7AD-81DF-44C1-9B09-B47FB4035CEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

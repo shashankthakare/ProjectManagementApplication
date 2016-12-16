@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9FFBCFE7-AD22-461F-94EC-56370F20A971}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TeamExpeditors.PMD.ServiceImplementation</RootNamespace>
+    <AssemblyName>TeamExpeditors.PMD.ServiceImplementation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.ServiceModel" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authentications.cs" />
+    <Compile Include="DashboardTeamOperations.cs" />
+    <Compile Include="DashboardUserOperations.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DashboardOperations.cs" />
+    <Compile Include="Registrations.cs" />
+    <Compile Include="TeamsOperations.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TeamExpeditors.PMD.Database\TeamExpeditors.PMD.Database.csproj">
+      <Project>{3310DD91-9F05-49B9-B35D-C11307F52970}</Project>
+      <Name>TeamExpeditors.PMD.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TeamExpeditors.PMD.DataContracts\TeamExpeditorsPMD.DataContracts.csproj">
+      <Project>{6E827E3D-2121-4003-A4EA-0DD6C249B87B}</Project>
+      <Name>TeamExpeditorsPMD.DataContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TeamExpeditors.PMD.ServiceContracts\TeamExpeditors.PMD.ServiceContracts.csproj">
+      <Project>{B6A33FB0-5F62-41B5-835E-01269ECAE807}</Project>
+      <Name>TeamExpeditors.PMD.ServiceContracts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

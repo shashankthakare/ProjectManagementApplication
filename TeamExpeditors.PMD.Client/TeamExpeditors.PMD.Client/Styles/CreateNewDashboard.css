@@ -1,0 +1,43 @@
+﻿.FieldsetContainerdiv
+{
+    position: relative;
+    left: 30%;
+    width: 40%;
+    text-align:center; 
+    
+}
+.overlay
+{
+    opacity: 0.1;
+    background-color: white;
+    height:593px;
+    position: absolute;
+    top:100px;
+    width:100%;  
+    z-index: 1000;
+}
+.txt
+{
+    width: 149px;
+}
+.txtarea
+{
+    width: 200px;
+}
+.Containerdiv
+{
+    position:relative;
+    top:5%;
+    left:25%;
+    width:35%;
+    height:227px;
+    background-image: url('/Images/Background.png');
+    }
+    .NewDashboard
+{
+    width: 80%;
+    float: left;
+    height: 370px;
+    
+    background-image: url('/Images/Background.png');
+}

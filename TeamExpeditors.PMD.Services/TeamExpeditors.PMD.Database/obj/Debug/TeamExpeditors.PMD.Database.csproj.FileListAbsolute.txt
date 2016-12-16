@@ -1,0 +1,6 @@
+C:\Users\ADMIN\Downloads\PMD\TeamExpeditors.PMD.Services\TeamExpeditors.PMD.Database\bin\Debug\TeamExpeditors.PMD.Database.dll.config
+C:\Users\ADMIN\Downloads\PMD\TeamExpeditors.PMD.Services\TeamExpeditors.PMD.Database\bin\Debug\TeamExpeditors.PMD.Database.dll
+C:\Users\ADMIN\Downloads\PMD\TeamExpeditors.PMD.Services\TeamExpeditors.PMD.Database\bin\Debug\TeamExpeditors.PMD.Database.pdb
+C:\Users\ADMIN\Downloads\PMD\TeamExpeditors.PMD.Services\TeamExpeditors.PMD.Database\obj\Debug\TeamExpeditors.PMD.Database.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Downloads\PMD\TeamExpeditors.PMD.Services\TeamExpeditors.PMD.Database\obj\Debug\TeamExpeditors.PMD.Database.dll
+C:\Users\ADMIN\Downloads\PMD\TeamExpeditors.PMD.Services\TeamExpeditors.PMD.Database\obj\Debug\TeamExpeditors.PMD.Database.pdb

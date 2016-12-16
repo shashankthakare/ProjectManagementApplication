@@ -1,0 +1,545 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body
+{
+    font-size: 14px;
+    font-family: Times New Roman,sans-serif,"Helvetica Neue" , "Lucida Grande" , "Segoe UI" , Arial, Helvetica, Verdana ;
+    margin: 0px;
+    padding: 0px; 
+    color: Black;
+    height: 400px;
+}
+
+a:link, a:visited
+{
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+a:active
+{
+    color: blue;
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h2, h3, h4, h5, h6
+{
+    font-size: 14px;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 2.6em;
+    padding: 0px 25px;
+    color: White;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+.page
+{
+    width: 100%;
+}
+
+.header
+{
+    margin: 0px;
+    padding: 0px;
+    background: #5bc0de;
+    width: 100%;
+    height: 30pt;
+}
+.headerForLoginMaster
+{
+    margin: 0px;
+    padding: 0px;
+    background: #5bc0de;
+    width: 100%;
+    height: 60pt;
+}
+.HeaderContainer
+{
+    float: left;
+    color: White;
+    margin-left: 44px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 10px 0px 0px 20px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 1em;
+    font-size: 18px;
+}
+
+.main
+{
+    padding: 0px 12px;
+    margin: 12px 8px 8px 8px;
+    min-height: 580px;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer
+{
+    color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+    background: #5bc0de;
+    height: 30px;
+}
+
+div.hideSkiplink
+{
+    background-color: #3a4f63;
+    width: 100%;
+}
+
+div.menu
+{
+    padding: 4px 0px 4px 8px;
+}
+
+div.menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+    background-color: #465c71;
+    border: 1px #4e667d solid;
+    color: #dde4ec;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+div.menu ul li a:hover
+{
+    background-color: #bfcbd6;
+    color: #465c71;
+    text-decoration: none;
+}
+
+div.menu ul li a:active
+{
+    background-color: #465c71;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+
+
+fieldset
+{
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+fieldset p
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, label, fieldset.changePassword label
+{
+    display: block;
+}
+fieldset.register
+{
+    display: block;
+    background-image: url('/Images/Background.png');
+    padding: 10px 5px;
+    width: 310px;
+    height:360px;
+}
+.Companyregister
+{
+    display: block;
+    background-image: url('/Images/Background.png');
+    padding: 10px 5px;
+    width: 310px;
+    height: 293px;
+}
+.NewCompanyregister{ display: block;
+    background-image: url('/Images/Background.png');
+    padding: 10px 5px;
+    width: 310px;
+    height: 359px;}
+fieldset label.inline
+{
+    display: inline;
+}
+
+legend
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input.textEntry
+{
+    border: 1px solid #ccc;
+    width: 250px;
+}
+.textEntry
+{
+    border: 1px solid #ccc;
+    width: 250px;
+}
+input.passwordEntry
+{
+    width: 250px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    height: auto;
+    left: 215px;
+    position: relative;
+    top: 100px;
+    width: 325px;
+}
+div.CompanyaccountInfo
+{
+   left: 350px;
+    margin-top: 100px;
+    position: absolute;
+    width: 50%
+}
+.companydetails
+{
+    float: left;
+}
+.admindetails
+{
+    float: right;
+}
+
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color: white;
+}
+
+.loginDisplay a:hover
+{
+    color: white;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.ButtonDiv
+{
+    text-align: right;
+    padding: 5px 19px 5px 5px;
+}
+.ButtonDivforRegistration
+{
+   
+    padding: 0 0 0 5px;
+    position: relative;
+    text-align: right;
+    top: 250px;
+    margin-right:152px;
+}
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+.DropdownList
+{
+    width: 300px;
+}
+
+.labelHeading
+{
+    color: #696969;
+    font-size: x-large;
+}
+
+.labelBody
+{
+    font-size: large;
+    color: black;
+}
+.LogOutLink
+{
+    color: White;
+    font-weight: bold;
+    text-align: right;
+}
+a
+{
+    color: Blue;
+}
+.LoginLink
+{
+    position: relative;
+    right: 15px;
+    bottom: 5px;
+}
+.ImageLink
+{
+    height: 40px;
+    width: 50px;
+    color: White;
+    border-color: rgb(73, 122, 184);
+    border: outset;
+}
+.button
+{
+  border-top: 1px solid #96d1f8;
+background: #5bc0de;
+background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#5bc0de));
+background: -webkit-linear-gradient(top, #3e779d, #5bc0de);
+background: -moz-linear-gradient(top, #3e779d,#5bc0de);
+background: -ms-linear-gradient(top, #3e779d, #5bc0de);
+background: -o-linear-gradient(top, #3e779d, #5bc0de);
+padding: 8px 16px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+box-shadow: rgba(0,0,0,1) 0 1px 0;
+text-shadow: rgba(0,0,0,.4) 0 1px 0;
+color: white;
+font-size: 14px;
+font-family: Georgia, Serif;
+text-decoration: none;
+vertical-align: middle;
+}
+.button:hover
+{
+    border-top-color: #5bc0de;
+    background: #5bc0de;
+    color: #ccc;
+}
+.button:active
+{
+    border-top-color: #3e779d;
+    background: #1b435e;
+}
+.button-row
+{
+  border-top: 1px solid #96d1f8;
+background: #5bc0de;
+background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#5bc0de));
+background: -webkit-linear-gradient(top, #3e779d, #5bc0de);
+background: -moz-linear-gradient(top, #3e779d,#5bc0de);
+background: -ms-linear-gradient(top, #3e779d, #5bc0de);
+background: -o-linear-gradient(top, #3e779d, #5bc0de);
+padding: 8px 16px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+box-shadow: rgba(0,0,0,1) 0 1px 0;
+text-shadow: rgba(0,0,0,.4) 0 1px 0;
+color: white;
+font-size: 14px;
+font-family: Georgia, Serif;
+text-decoration: none;
+vertical-align: middle;
+}
+
+.font16
+{
+    font-size: 16px;
+}
+
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li
+{
+    float: left;
+}
+a.header
+{
+    display: block;
+    width: 60px;
+    background-color: #dddddd;
+}
+
+.Headerwrapper
+{
+    width: 100%;
+    height: 45px;
+    background: #5bc0de;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+ul.menu
+{
+    height: 30px;
+    border-right: 1px solid rgba(255,255,255,0.3);
+    float: left;
+}
+
+ul.menu li
+{
+    list-style: none;
+    float: left;
+    height: 45px;
+    text-align: center;
+    color: White; 
+}
+
+ul li a
+{
+    display: block;
+    padding: 0px 20px;
+    text-align: center;
+    line-height: 45px;
+    color: White; 
+    border-right: 1px solid #96d1f8;
+    background: #5bc0de; 
+    font-size: 14px;
+    font-family: serif;
+}
+
+ul li a:hover
+{
+}
+
+ul li.active a
+{
+    background: #5bc0de;
+    font-size: 14px;
+    font-family: serif;
+}
+.RegistrationContainer
+{
+    text-align: center;
+}
+
+.blankSpace
+{
+    margin-bottom:20px;
+    height:5px;
+}
+
+.right
+{
+    float:right;
+}
+
+.left
+{
+    float:left;
+}

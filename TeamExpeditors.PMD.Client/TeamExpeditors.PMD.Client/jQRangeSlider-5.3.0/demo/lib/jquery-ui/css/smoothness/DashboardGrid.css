@@ -1,0 +1,175 @@
+﻿body
+{
+}
+.DashBoardHeader
+{
+    /*background-color: Blue;*/
+}
+
+.LabelFont
+{
+    font-size: x-large;
+}
+.DashboardContainer
+{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.SingleDashBoard
+{
+    height: 40px;
+    width: 40px;
+    background-color: White;
+}
+.SpaceDiv
+{
+    height: 10pt;
+}
+
+.DashboardItemContainer
+{
+    height: 500px;
+    width: 100%;
+}
+.DashboardItemHeader
+{
+    height: 8%;
+    width: 100%;
+}
+
+.DashboardItemOperations
+{
+    float: left;
+    width: 100%;
+    height: 48px;
+    text-align: right;
+}
+.DashboardItemGrid
+{
+    /* float: left;     width: 78%;     height: 95%;     border-style: inset;     overflow: scroll;     overflow-x: visible;*/ /*background-color: #bbb;*/
+    width: 98%;
+    height: 95%;
+  
+    overflow-x: hidden
+}
+.HorizontalSpace
+{
+    height: 20px;
+    width: 100%;
+}
+.VerticalSpace
+{
+    float: left;
+    height: 100%;
+    width: 1%;
+}
+.ButtonStyle
+{
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.weekCells
+{
+    border: 1px solid black;
+    width: 60px;
+    height: 100%;
+}
+
+.dashboardItemRow
+{
+    height: 20px;
+    border: 1px solid red;
+}
+.DashboardItemNames
+{
+    border: 1px solid black;
+    width: 100px;
+    height: 100%;
+    float: left;
+}
+
+.TestGrid
+{
+    height: 200px;
+    width: 200px;
+    overflow: scroll;
+}
+
+#wrappergrid
+{
+   /* width: 5775px;
+    height: 582px;*/
+    width: 815%;
+	height: 115%;
+}
+.WeekContainer
+{
+    /* width:4300px; 	height:600px; 	overflow-y: scroll;*/
+    width: 1000px;
+    overflow-y: scroll;
+}
+#weekWrapper
+{
+    width: 5500px;
+    height: 115%;
+}
+#containersimg
+{
+    background-color: #bbb;
+    width: 300px;
+    height: 135px;
+    overflow-x: scroll;
+}
+
+.dashboardItemName
+{
+    border: 1px solid black;
+    width: 200px;
+    height: 30px;
+    float: left;
+    text-align: center;
+    background-color: #4b6c9e;
+    color: white;
+    padding: 8px 0px 0px 0px;
+}
+.dashboardWeekName
+{
+    border: 1px solid gray;
+    width: 100px;
+    height: 30px;
+    float: left;
+    text-align: center;
+    background-color: #4b6c9e;
+    color: white;
+    padding: 8px 0px 0px 0px;
+}
+.cell
+{
+    border: 1px solid gray;
+    width: 100px;
+    height: 40px;
+    float: left;
+    text-align: center;
+}
+.tabsHeight
+{
+    height: 584px;
+}
+
+.LabelButton
+{
+    font-size: x-large;
+}
+#ItemnameWrapper
+{
+    width: 220px;
+    height: 500px;
+    float: left;
+    text-align: left;
+   
+}

@@ -1,0 +1,95 @@
+﻿body
+{
+}
+.LabelFont
+{
+    font-size: x-large;
+}
+.DashboardContainer
+{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.SingleDashBoard
+{
+    height: 40px;
+    width: 40px;
+    background-color: White;
+}
+.SpaceDiv
+{
+    height: 10pt;
+}
+.Space30
+{
+    height: 30pt;
+}
+.fieldsetClass
+{
+    width: 43%;
+    float: left;
+    height: 160px;
+    margin-left: 0px;
+    background-image: url('/Images/Background.png');
+}
+
+.createbuttonDiv
+{
+    width: 90%;
+    height: 40px;
+    position: relative;
+    top: 420px;
+}
+fieldsetClassMain
+{
+    width: 45%;
+    float: left;
+    height: 310px;
+    background-color: Red;
+}
+.container
+{
+    position: relative;
+    left: 30%;
+    width: 44%;
+}
+.fieldsetClassMain
+{
+    background-image: url('/Images/Background.png');
+}
+.StatusNew
+{
+    margin-top: 5px;
+}
+.StatusColorCss
+{
+    height: 15px;
+    width: 30px;
+    float: left;
+    position: relative;
+    left: 150px;
+}
+
+.deleteButtonOnCreateItem
+{
+    cursor: pointer;
+    float: right;
+    margin-bottom: 5px;
+    width: 30px;
+}
+
+.fieldsetCreateTeam
+{
+    width: 30%;
+    float: left;
+    height: 160px;
+    margin-left: 20px;
+    background-image: url('/Images/Background.png');
+}
+.FieldsetContainerCreateTeam
+{
+    position: relative;
+    left: 20%;
+}
